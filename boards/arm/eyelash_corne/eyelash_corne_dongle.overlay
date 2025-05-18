@@ -1,0 +1,17 @@
+#include eyelash_corne-layouts.dtsi
+#include eyelash_corne.dtsi
+#include <dt-bindings/zmk/matrix_transform.h>
+
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    mock_kscan: kscan_1 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
